@@ -9,11 +9,11 @@ ARG VERSION
 ENV GO111MODULE=auto
 ENV CGO_ENABLED=0
 
-WORKDIR $GOPATH/src/github.com/thazelart/golang-cli-template
+WORKDIR $GOPATH/src/github.com/thazelart/golang-grpc-template
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
-RUN make build
+RUN make go/build
 RUN echo "nonroot:x:65534:65534:Non root:/:" > /etc_passwd
 
 
@@ -22,10 +22,10 @@ FROM scratch
 
 LABEL maintainer="Thibault HAZELART thazelart@gmail.com"
 
-COPY --from=builder /go/bin/golang-cli-template /bin/golang-cli-template
+COPY --from=builder /go/bin/golang-grpc-template /bin/golang-grpc-template
 COPY --from=builder /etc_passwd /etc/passwd
 
 USER nonroot
 
-ENTRYPOINT [ "golang-cli-template" ]
+ENTRYPOINT [ "golang-grpc-template" ]
 CMD [ "version" ]

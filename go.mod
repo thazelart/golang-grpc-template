@@ -1,4 +1,4 @@
-module github.com/thazelart/golang-cli-template
+module github.com/thazelart/golang-grpc-template
 
 go 1.19
 

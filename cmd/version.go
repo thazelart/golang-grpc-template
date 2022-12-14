@@ -6,7 +6,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/thazelart/golang-cli-template/internal/cmd/version"
+	"github.com/thazelart/golang-grpc-template/internal/cmd/version"
 )
 
 // versionCmd represents the version command

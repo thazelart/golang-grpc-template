@@ -1,4 +1,4 @@
-BIN_NAME=golang-cli-template
+BIN_NAME=golang-grpc-template
 IMAGE_NAME=thazelart/${BIN_NAME}
 BIN_PATH=${GOPATH}/bin
 GO_VERSION=1.19

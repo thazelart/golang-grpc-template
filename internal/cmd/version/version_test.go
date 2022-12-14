@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-var regexp = fmt.Sprintf(`^golang-cli-template - .*
+var regexp = fmt.Sprintf(`^golang-grpc-template - .*
 
 Git Commit: .*
 Build date: [0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2} .*

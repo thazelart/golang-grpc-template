@@ -1,18 +1,20 @@
 <!-- BEGIN __DO_NOT_INCLUDE__ -->
-<p align="center"><img src="https://gist.githubusercontent.com/thazelart/5be06c101f53079b9914d6efd867e690/raw/35bdb7d2ba35dc2958637a59b63aa3d3db44f4f3/golang-cli-template.png" alt="Logo" height="120" /></p>
+<p align="center"><img src="https://gist.githubusercontent.com/thazelart/5be06c101f53079b9914d6efd867e690/raw/4ca768dbcd319dafef4aa7c2511bfa2b580858db/golang-grpc-template.png" alt="Logo" height="120" /></p>
 <!-- END __DO_NOT_INCLUDE__ -->
-<h1 align="center"> golang-cli-template</h1>
+<h1 align="center"> golang-grpc-template</h1>
 
 <p align="center">
   <a href="https://github.com/gojp/goreportcard/blob/master/LICENSE" rel="nofollow"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License Apache 2.0" style="max-width:100%;"></a>
-  <a href="https://pkg.go.dev/github.com/thazelart/golang-cli-template" rel="nofollow"><img src="https://pkg.go.dev/badge/github.com/thazelart/golang-cli-template.svg" alt="Go reference" style="max-width:100%;"></a>
-  <a href="https://goreportcard.com/report/github.com/thazelart/golang-cli-template" rel="nofollow"><img src="https://goreportcard.com/badge/github.com/thazelart/golang-cli-template" alt="Go report card" style="max-width:100%;"></a>
+  <a href="https://pkg.go.dev/github.com/thazelart/golang-grpc-template" rel="nofollow"><img src="https://pkg.go.dev/badge/github.com/thazelart/golang-grpc-template.svg" alt="Go reference" style="max-width:100%;"></a>
+  <a href="https://goreportcard.com/report/github.com/thazelart/golang-grpc-template" rel="nofollow"><img src="https://goreportcard.com/badge/github.com/thazelart/golang-grpc-template" alt="Go report card" style="max-width:100%;"></a>
 </p>
 <br/>
 
-An opinionated template for new Golang cli projects.
+An opinionated template for new Golang gRPC projects.
 
 <!-- BEGIN __DO_NOT_INCLUDE__ -->
+
+This repository is based on [golang-cli-template](https://github.com/thazelart/golang-cli-template).
 
 It includes:
 
@@ -47,25 +49,25 @@ Enjoy developing your awesome cli.
 ### Manual install
 
 ```bash
-$ git clone github.com/thazelart/golang-cli-template
-$ cd golang-cli-template
+$ git clone github.com/thazelart/golang-grpc-template
+$ cd golang-grpc-template
 $ go generate ./...
 $ go install
 ```
 
 ### From binaries
 
-Download the pre-compiled binaries from the [release page](https://github.com/thazelart/golang-cli-template/releases) page and copy them to the desired location.
+Download the pre-compiled binaries from the [release page](https://github.com/thazelart/golang-grpc-template/releases) page and copy them to the desired location.
 
 ```bash
-$ wget https://github.com/thazelart/golang-cli-template/releases/download/vX.Y.Z/golang-cli-template_Linux_x86_64.tar.gz
-$ tar xvf golang-cli-template_Linux_x86_64.tar.gz
-$ mv golang-cli-template /usr/local/bin
+$ wget https://github.com/thazelart/golang-grpc-template/releases/download/vX.Y.Z/golang-grpc-template_Linux_x86_64.tar.gz
+$ tar xvf golang-grpc-template_Linux_x86_64.tar.gz
+$ mv golang-grpc-template /usr/local/bin
 ```
 
 ## Generate and use the autocompletion script
 
 ```bash
-$ golang-cli-template completion ${0##*/} > /tmp/completion
+$ golang-grpc-template completion ${0##*/} > /tmp/completion
 $ source /tmp/completion
 ```

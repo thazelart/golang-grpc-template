@@ -23,13 +23,11 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var cfgFile string
-
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "golang-cli-template",
-	Short: "A Golang cli template.",
-	Long:  `An opinionated template for new Golang cli projects.`,
+	Use:   "golang-grpc-template",
+	Short: "A Golang gRPC template.",
+	Long:  `An opinionated template for new Golang gRPC projects.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },

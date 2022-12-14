@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/thazelart/golang-cli-template/cmd"
+import "github.com/thazelart/golang-grpc-template/cmd"
 
 func main() {
 	cmd.Execute()

@@ -10,7 +10,7 @@ inputs:
     text: What is the project repo user? (e.g. thazelart)
     type: text
   - id: repo_name
-    text: What is the project name? (e.g. my-awesome-go-cli)
+    text: What is the project name? (e.g. my-awesome-grpc-project)
     type: text
   - id: short_description
     text: What is a short project description?
@@ -28,20 +28,20 @@ before:
 transformations:
   - name: project short description
     type: replace
-    pattern: A Golang cli template.
+    pattern: A Golang gRPC template.
     replacement: "{{ wrap 80 .short_description }}"
     files:
       - "cmd/root.go"
   - name: project long description
     type: replace
-    pattern: An opinionated template for new Golang cli projects.
+    pattern: An opinionated template for new Golang gRPC projects.
     replacement: "{{ wrap 80 .long_description }}"
     files:
       - "cmd/root.go"
       - "README.md"
   - name: project long path
     type: replace
-    pattern: github.com/thazelart/golang-cli-template
+    pattern: github.com/thazelart/golang-grpc-template
     replacement: "{{ .repo_base_url }}/{{ .repo_user }}/{{ .repo_name }}"
     files:
       - "*.go"
@@ -55,7 +55,7 @@ transformations:
       - ".github/workflows/*.yaml"
   - name: project short path
     type: replace
-    pattern: thazelart/golang-cli-template
+    pattern: thazelart/golang-grpc-template
     replacement: "{{ .repo_user }}/{{ .repo_name }}"
     files:
       - "*.go"
@@ -67,7 +67,7 @@ transformations:
       - ".github/workflows/*.yaml"
   - name: project name
     type: replace
-    pattern: golang-cli-template
+    pattern: golang-grpc-template
     replacement: "{{ .repo_name }}"
     files:
       - "*.go"
@@ -93,7 +93,7 @@ transformations:
     files: ["**"]
   - name: remove .go-archtype.yaml
     type: include
-    region_marker:    # When there's no marker, the entire file(s) is included
+    region_marker: # When there's no marker, the entire file(s) is included
     condition: "yes"
     files:
       - ".go-archtype.yaml"
